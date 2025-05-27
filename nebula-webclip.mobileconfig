@@ -8,27 +8,20 @@
     <dict>
       <key>FullScreen</key>
       <true/>
-      <key>Icon</key>
-      <data>
-        iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAIAAABoJHXvAAAAhGVYSWZNTQAqAAAACAAFARIAAwAA...
-        ... (full base64 continues here, no line breaks or extra spaces) ...
-      </data>
       <key>IsRemovable</key>
       <true/>
       <key>Label</key>
       <string>Nebula Cheats</string>
       <key>PayloadDescription</key>
-      <string>Installs a Web Clip for Nebula Cheats</string>
+      <string>Adds a shortcut to Nebula Cheats</string>
       <key>PayloadDisplayName</key>
       <string>Nebula Cheats Web Clip</string>
       <key>PayloadIdentifier</key>
-      <string>com.nebulacheats.webclip</string>
-      <key>PayloadOrganization</key>
-      <string>Nebula</string>
+      <string>com.nebula.webclip</string>
       <key>PayloadType</key>
       <string>com.apple.webClip.managed</string>
       <key>PayloadUUID</key>
-      <string>8E6E2F1D-6A1D-40B5-A9E9-NEBULA00001</string>
+      <string>8A4F9B1F-1C11-4E23-98FB-04D9EAB32C13</string>
       <key>PayloadVersion</key>
       <integer>1</integer>
       <key>Precomposed</key>
@@ -38,17 +31,15 @@
     </dict>
   </array>
   <key>PayloadDisplayName</key>
-  <string>Nebula Cheats Web Clip</string>
+  <string>Nebula Cheats Profile</string>
   <key>PayloadIdentifier</key>
-  <string>com.nebulacheats.profile</string>
-  <key>PayloadOrganization</key>
-  <string>Nebula</string>
+  <string>com.nebula.profile</string>
   <key>PayloadRemovalDisallowed</key>
   <false/>
   <key>PayloadType</key>
   <string>Configuration</string>
   <key>PayloadUUID</key>
-  <string>D2412C5E-B10E-4FAF-8D55-NEBULACONFIG</string>
+  <string>18F8A0F9-B1F1-4C3F-BD32-84F1F1F7F1AA</string>
   <key>PayloadVersion</key>
   <integer>1</integer>
 </dict>
