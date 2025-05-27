@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
-    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>PayloadContent</key>
@@ -10,9 +10,8 @@
       <true/>
       <key>Icon</key>
       <data>
-        /9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhIQEhIVFRUVFRUVFRUVFRUVFRUQFRUWFhUV
-        ... (your full base64 JPEG here, no line breaks) ...
-        pVtbMif/2Q==
+        iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAIAAABoJHXvAAAAhGVYSWZNTQAqAAAACAAFARIAAwAA...
+        ... (full base64 continues here, no line breaks or extra spaces) ...
       </data>
       <key>IsRemovable</key>
       <true/>
