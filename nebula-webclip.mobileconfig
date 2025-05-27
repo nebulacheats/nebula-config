@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>FullScreen</key>
+      <true/>
+      <key>IsRemovable</key>
+      <true/>
+      <key>Label</key>
+      <string>Nebula Cheats</string>
+      <key>PayloadDescription</key>
+      <string>Adds a shortcut to Nebula Cheats</string>
+      <key>PayloadDisplayName</key>
+      <string>Nebula Cheats Web Clip</string>
+      <key>PayloadIdentifier</key>
+      <string>com.nebula.webclip</string>
+      <key>PayloadType</key>
+      <string>com.apple.webClip.managed</string>
+      <key>PayloadUUID</key>
+      <string>8A4F9B1F-1C11-4E23-98FB-04D9EAB32C13</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>Precomposed</key>
+      <true/>
+      <key>URL</key>
+      <string>https://nebula-cheats.neocities.org</string>
+    </dict>
+  </array>
+  <key>PayloadDisplayName</key>
+  <string>Nebula Cheats Profile</string>
+  <key>PayloadIdentifier</key>
+  <string>com.nebula.profile</string>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>18F8A0F9-B1F1-4C3F-BD32-84F1F1F7F1AA</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+</dict>
+	</plist>
