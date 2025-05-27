@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
-  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>PayloadContent</key>
@@ -8,20 +8,28 @@
     <dict>
       <key>FullScreen</key>
       <true/>
+      <key>Icon</key>
+      <data>
+        /9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhIQEhIVFRUVFRUVFRUVFRUVFRUQFRUWFhUV
+        ... (your full base64 JPEG here, no line breaks) ...
+        pVtbMif/2Q==
+      </data>
       <key>IsRemovable</key>
       <true/>
       <key>Label</key>
       <string>Nebula Cheats</string>
       <key>PayloadDescription</key>
-      <string>Adds a shortcut to Nebula Cheats</string>
+      <string>Installs a Web Clip for Nebula Cheats</string>
       <key>PayloadDisplayName</key>
       <string>Nebula Cheats Web Clip</string>
       <key>PayloadIdentifier</key>
-      <string>com.nebula.webclip</string>
+      <string>com.nebulacheats.webclip</string>
+      <key>PayloadOrganization</key>
+      <string>Nebula</string>
       <key>PayloadType</key>
       <string>com.apple.webClip.managed</string>
       <key>PayloadUUID</key>
-      <string>8A4F9B1F-1C11-4E23-98FB-04D9EAB32C13</string>
+      <string>8E6E2F1D-6A1D-40B5-A9E9-NEBULA00001</string>
       <key>PayloadVersion</key>
       <integer>1</integer>
       <key>Precomposed</key>
@@ -31,16 +39,18 @@
     </dict>
   </array>
   <key>PayloadDisplayName</key>
-  <string>Nebula Cheats Profile</string>
+  <string>Nebula Cheats Web Clip</string>
   <key>PayloadIdentifier</key>
-  <string>com.nebula.profile</string>
+  <string>com.nebulacheats.profile</string>
+  <key>PayloadOrganization</key>
+  <string>Nebula</string>
   <key>PayloadRemovalDisallowed</key>
   <false/>
   <key>PayloadType</key>
   <string>Configuration</string>
   <key>PayloadUUID</key>
-  <string>18F8A0F9-B1F1-4C3F-BD32-84F1F1F7F1AA</string>
+  <string>D2412C5E-B10E-4FAF-8D55-NEBULACONFIG</string>
   <key>PayloadVersion</key>
   <integer>1</integer>
 </dict>
-	</plist>
+</plist>
