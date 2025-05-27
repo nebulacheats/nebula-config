@@ -1,53 +1,167 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
- "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-  <dict>
-    <key>PayloadContent</key>
-    <array>
-      <dict>
-        <key>FullScreen</key>
-        <true/>
-        <key>Icon</key>
-        <data>
-        </data>
-        <key>IsRemovable</key>
-        <true/>
-        <key>Label</key>
-        <string>Nebula Cheats</string>
-        <key>PayloadDescription</key>
-        <string>Configures a Web Clip to Nebula Cheats Installer</string>
-        <key>PayloadDisplayName</key>
-        <string>Nebula Cheats Web Clip</string>
-        <key>PayloadIdentifier</key>
-        <string>com.nebula.webclip</string>
-        <key>PayloadType</key>
-        <string>com.apple.webClip.managed</string>
-        <key>PayloadUUID</key>
-        <string>9A6B1F8C-7F90-4D71-A9EB-123456789ABC</string>
-        <key>PayloadVersion</key>
-        <integer>1</integer>
-        <key>Precomposed</key>
-        <true/>
-        <key>URL</key>
-        <string>https://raw.githubusercontent.com/nebulacheats/nebula-config/refs/heads/main/index.html</string>
-      </dict>
-    </array>
-    <key>PayloadDescription</key>
-    <string>Profile to install Nebula Cheats Web Clip</string>
-    <key>PayloadDisplayName</key>
-    <string>Nebula Cheats Installer</string>
-    <key>PayloadIdentifier</key>
-    <string>com.nebula.profile</string>
-    <key>PayloadOrganization</key>
-    <string>Nebula Cheats</string>
-    <key>PayloadRemovalDisallowed</key>
-    <false/>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>D83B8F2A-4F07-4C2F-8191-ABCDEF123456</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
-  </dict>
-</plist>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula Cheats • Installer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Zen+Dots&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Orbitron', 'Zen Dots', sans-serif;
+      background: radial-gradient(circle at center, #1a001f 0%, #000 100%);
+      color: white;
+      overflow: hidden;
+    }
+
+    .space {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .planet {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #a974ff, #3b0066);
+      box-shadow: 0 0 35px 10px rgba(168, 116, 255, 0.35);
+      animation: float 30s ease-in-out infinite;
+    }
+
+    .planet.small { width: 70px; height: 70px; top: 10%; left: 15%; animation-delay: 1s; }
+    .planet.medium { width: 120px; height: 120px; top: 60%; left: 75%; animation-delay: 2s; }
+    .planet.large { width: 180px; height: 180px; top: 70%; left: 20%; animation-delay: 3s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .shooting-star {
+      position: absolute;
+      width: 2px;
+      height: 120px;
+      background: linear-gradient(to bottom, white, transparent);
+      opacity: 0.8;
+      transform: rotate(45deg);
+      animation: shoot 1.6s linear forwards;
+      z-index: 1;
+    }
+
+    @keyframes shoot {
+      0% { transform: translateY(0) translateX(0) rotate(45deg); opacity: 1; }
+      100% { transform: translateY(100vh) translateX(200px) rotate(45deg); opacity: 0; }
+    }
+
+    .main {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    h1 {
+      font-size: 3.5em;
+      background: linear-gradient(to right, #ffffff, #aa7eff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px #aa7eff77;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #e0d7ff;
+      margin-top: 10px;
+    }
+
+    .install-btn {
+      background: #a974ff;
+      border: none;
+      padding: 1em 2em;
+      margin-top: 25px;
+      border-radius: 12px;
+      font-size: 1.3em;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 20px #a974ff88;
+      transition: all 0.3s ease;
+    }
+
+    .install-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px #be90ff;
+    }
+
+    #installNote {
+      margin-top: 25px;
+      font-size: 1em;
+      color: #ccc;
+      opacity: 0;
+      transition: opacity 1.2s ease;
+    }
+
+    #installNote.visible {
+      opacity: 1;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="space">
+  <div class="planet small"></div>
+  <div class="planet medium"></div>
+  <div class="planet large"></div>
+</div>
+
+<div class="main">
+  <h1>Nebula Cheats Installer</h1>
+  <p>Install your celestial configuration</p>
+  <a href="https://nebulacheats.github.io/nebula-config/nebula-webclip.mobileconfig">
+    <button class="install-btn" id="installBtn">Install Now</button>
+  </a>
+  <p id="installNote">🚀 Installation started — prepare to ascend to TON 618.</p>
+</div>
+
+<div id="shootingStars"></div>
+
+<audio autoplay loop>
+  <source src="your-music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const installBtn = document.getElementById("installBtn");
+  const note = document.getElementById("installNote");
+  const starField = document.getElementById("shootingStars");
+
+  installBtn.addEventListener("click", () => {
+    note.classList.add("visible");
+  });
+
+  function spawnStar() {
+    const star = document.createElement("div");
+    star.className = "shooting-star";
+    star.style.left = Math.random() * window.innerWidth + "px";
+    starField.appendChild(star);
+    setTimeout(() => {
+      star.remove();
+    }, 1600);
+  }
+
+  setInterval(spawnStar, 1200);
+</script>
+
+</body>
+</html>
